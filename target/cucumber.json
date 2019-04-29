@@ -1,0 +1,92 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6744408825,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "search for schipperke",
+        "description": "",
+        "id": "wikipedia-search-item;search-for-schipperke",
+        "after": [
+          {
+            "result": {
+              "duration": 1379478501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 186180570,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on Home Page of www.wikipedia.org",
+            "match": {
+              "location": "EggPlantSteps.user_is_on_Home_Page_of_www_wikipedia_org()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 849894898,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User type \"schipperke\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "schipperke",
+                  "offset": 11
+                }
+              ],
+              "location": "EggPlantSteps.user_type_in_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52117544,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the product description should be displayed",
+            "match": {
+              "location": "EggPlantSteps.the_product_description_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "wikipedia search item",
+    "description": "As a user\r\nI want to search for a product\r\nSo that i can verify the seach functionalty",
+    "id": "wikipedia-search-item",
+    "keyword": "Feature",
+    "uri": "eggplant.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@eggplant"
+      }
+    ]
+  }
+]
